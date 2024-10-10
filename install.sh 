@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run as root or use sudo."
+    exit 1
+fi
+
+dependencies=(grep awk sed)
+for dep in "${dependencies[@]}"; do
+    install_if_missing "$dep"
+done
+
+install_dir="/usr/local/troubleshooter"
+mkdir -p "$install_dir"
+cp -r bin src config "$install_dir/"
+chmod +x "$install_dir/bin/troubleshooter.sh"
+
+ln -sf "$install_dir/bin/troubleshooter.sh" /usr/local/bin/troubleshooter
+
+echo "Installation complete. You can now run 'troubleshooter' from anywhere."
