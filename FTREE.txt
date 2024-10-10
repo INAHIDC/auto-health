@@ -1,0 +1,25 @@
+├── bin/
+│   └── troubleshooter.sh
+├── src/
+│   ├── functions/
+│   │   ├── dns_check.sh
+│   │   ├── driver_check.sh
+│   │   ├── storage_health.sh
+│   │   ├── smart_check.sh
+│   │   ├── network_check.sh
+│   │   ├── service_check.sh
+│   │   └── system_load_check.sh
+│   ├── utils/
+│   │   ├── install_helpers.sh
+│   │   ├── logger.sh
+│   │   └── config.sh
+├── tests/
+│   ├── dns_check_test.bats
+│   ├── driver_check_test.bats
+│   └── ... (tests for other functions)
+├── config/
+│   └── troubleshooter.conf
+├── install.sh
+├── README.md
+├── LICENSE
+└── Makefile
