@@ -15,7 +15,7 @@
 - Config 
 
 
-## to run the shootah
+ to run the shootah
 
 ```bash
 git clone https://github.com/INAHIDC/auto-health.git
@@ -26,13 +26,13 @@ sudo make install
 
 ```
 
-## if you want to run specific file 
+if you want to run specific file 
 ```bash
 
 troubleshooter --dns --network
 
 ```
-## if you want to change anything 
+if you want to change anything 
 
 ```
 sudo nano config/troubleshooter.conf
