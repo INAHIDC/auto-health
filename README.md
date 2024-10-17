@@ -1,6 +1,6 @@
 # auto-health 
 
-**shell help for help Desk 🙃 some system diagnostics**
+**noobs system audit/fix ?**
 
 ## files
 
@@ -16,26 +16,16 @@
 
 next: i think after i finish this, since now i have a good understanding of what im doing; im going to implement something like lynis to audit and then based on the audit automate some scripts to harden system. 
 
- to run the shootah
+
+
+clone the repo 
+cd into the repo
 
 ```bash
-git clone https://github.com/INAHIDC/auto-health.git
-
-cd troubleshooter
-
 sudo make install
-
 ```
-
-if you want to run specific file 
+you can run specific functinos too 
 ```bash
-
 troubleshooter --dns --network
-
 ```
-if you want to change anything 
 
-```
-sudo nano config/troubleshooter.conf
-
-```
