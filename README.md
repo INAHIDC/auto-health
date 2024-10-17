@@ -14,6 +14,7 @@
 - Logging w/ Timestamps
 - Config 
 
+next: i think after i finish this, since now i have a good understanding of what im doing; im going to implement something like lynis to audit and then based on the audit automate some scripts to harden system. 
 
  to run the shootah
 
